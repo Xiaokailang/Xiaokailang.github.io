@@ -1,5 +1,5 @@
 
-/* 文章页背景 */
+文章页背景 */
 .layout_post>#post {
     /* 以下代表白色透明度为0.3 */
     background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);
@@ -7,23 +7,54 @@
 /* 所有背景（包括首页卡片、文章页、页面页等） */
 #aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
     /* 以下代表白色透明度为0.3 */
-        background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);
+     background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);
 }
-}
-#web_bg{
-    background-image: url('http://graph.baidu.com/resource/1222f066b8b6cf00e508001596186325.jpg)'';
-    background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);
+
+/* #web_bg{
+    background-image: url('http://graph.baidu.com/resource/122d2066b8b6cf00e508001596188681.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+} */
+/*头部文字颜色*/
+
+#nav a {
+    color: #f9f2f4;
 }
-body {
+/*a标签颜色*/
+
+a {
+    color: #00c4b6;
+}
+/* 滚动条 */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e58a8a;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #e58a8a;
+}
+/* body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
         default;
 }
 a,img {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
         default;
-}
+} */
 
 /* 页脚footer */
 /* 渐变色滚动动画 */
@@ -85,5 +116,6 @@ a,img {
 #footer:before {
     background-color: rgba(0, 0, 0, 0);
 }
+
 
 

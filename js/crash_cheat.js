@@ -3,12 +3,12 @@ var OriginTitle = document.title;
  document.addEventListener('visibilitychange', function () {
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/joke.ico");
-         document.title = '网页丢失~好像没网了~';
+         document.title = 'ε＝ε＝ε＝(#>д<)ﾉ你丑你就走';
          clearTimeout(titleTime);
      }
      else {
          $('[rel="icon"]').attr('href', "/favicon.ico");
-         document.title = ' nice  网络非常好哟 ^_^';
+         document.title = ' (*^▽^*)  你帅你就回来！ ^_^';
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);

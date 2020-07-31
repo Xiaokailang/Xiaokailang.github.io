@@ -284,7 +284,11 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: ;
+  background: -webkit-linear-gradient(left, #f00, #00f);
+  background: -moz-linear-gradient(left, #f00, #00f);
+  background: -o-linear-gradient(left, #f00, #00f);
+  background: -ms-linear-gradient(left, #f00, #00f);
+  background: linear-gradient(to right, #f00, #00f);
   background-attachment: local;
   background-position: center;
   -webkit-background-size: cover;
