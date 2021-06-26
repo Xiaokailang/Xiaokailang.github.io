@@ -1,17 +1,17 @@
 
-文章页背景 */
+/*文章页背景 */
 .layout_post>#post {
-    /* 以下代表白色透明度为0.3 */
+    
     background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);
 }
 /* 所有背景（包括首页卡片、文章页、页面页等） */
 #aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
-    /* 以下代表白色透明度为0.3 */
+    
      background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);
 }
 
 /* #web_bg{
-    background-image: url('http://graph.baidu.com/resource/122d2066b8b6cf00e508001596188681.jpg');
+    background-image: url("/my_blog/blog/themes/Butterfly/source/img/background_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 } */
@@ -47,14 +47,14 @@ a {
     color: #fff;
     background-color: #e58a8a;
 }
-/* body {
+body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
         default;
 }
 a,img {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
         default;
-} */
+}
 
 /* 页脚footer */
 /* 渐变色滚动动画 */
