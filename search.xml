@@ -63,14 +63,69 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="web程序设计"><a href="#web程序设计" class="headerlink" title="web程序设计"></a>web程序设计</h1><ul>
 <li><p>准备阶段</p>
 <ul>
-<li>学习相关的知识<br>1.学习html、css,我学习的是尚硅谷李立超老师的视频，超哥讲课认真仔细，非常细节并且风趣幽默，保姆式讲课，很适合0基础学习<br>   视频链接[尚硅谷Web前端HTML5&amp;CSS3初学者零基础入门全套完整版]<a href="https://www.bilibili.com/video/BV1XJ411X7Ud" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1XJ411X7Ud</a><br>2.学习js，同样我学的也是超哥的视频,不过可能有些知识过时了，但主要的没影响。(主要是讲好)<br>   视频链接[尚硅谷最新版JavaScript基础全套教程完整版(140集实战教学,JS从入门到精通)]<a href="https://www.bilibili.com/video/BV1YW411T7GX" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1YW411T7GX</a><br>3.学习查询资料: [W3c]<a href="https://www.w3school.com.cn/" target="_blank" rel="noopener">https://www.w3school.com.cn/</a></li>
-<li>学习小心得<br>1.建议关闭弹幕，弹幕挺多泄露王。<br>2.一定要边学边敲,如果觉得简单，可以不敲，但有些重要的一定要敲。听得懂不代表自己敲的出来。<br>3.听不懂的部分一定要反复听，可以打开弹幕看看别人的想法，一定要听懂。<br>超哥原版资料</li>
+<li>学习相关的知识<ol>
+<li>学习html、css,我学习的是尚硅谷李立超老师的视频，超哥讲课认真仔细，非常细节并且风趣幽默，保姆式讲课，很适合0基础学习<br>视频链接: <a href="https://www.bilibili.com/video/BV1XJ411X7Ud" target="_blank" rel="noopener">尚硅谷Web前端HTML5&amp;CSS3初学者零基础入门全套完整版</a></li>
+<li>学习js，同样我学的也是超哥的视频,不过可能有些知识过时了，但主要的没影响。(主要是讲好)<br>视频链接: <a href="https://www.bilibili.com/video/BV1YW411T7GX" target="_blank" rel="noopener">尚硅谷最新版JavaScript基础全套教程完整版(140集实战教学,JS从入门到精通)</a></li>
+<li>学习查询资料: <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener">W3c</a></li>
+</ol>
+</li>
+<li>学习小心得<ol>
+<li>建议关闭弹幕，弹幕挺多泄露王。</li>
+<li>一定要边学边敲,如果觉得简单，可以不敲，但有些重要的一定要敲。听得懂不代表自己敲的出来。</li>
+<li>听不懂的部分一定要反复听，可以打开弹幕看看别人的想法，一定要听懂。<br>超哥原版资料</li>
+</ol>
+</li>
 <li>编写软件<br>我建议VScode，简单好用功能很多<br>提前下载好插件Live Server<br><img src="https://i0.hdslb.com/bfs/album/6485d8aec563ad20944093ac9667f9629c2a3816.png" alt="Live Server"></li>
 </ul>
 </li>
 <li><p>开始阶段</p>
 <ul>
 <li>设计<br>根据要求至少有两个及以上的网页。<br>我编写了两个页面，1是官网，2是登录页面。</li>
+<li>因为超哥视频项目是小米官网练习，所以我采用模仿小米官网来作为课设。</li>
+</ul>
+<!-- 虚线 -->
+</li>
+</ul>
+<hr>
+<ul>
+<li><a href="mi-exercise.html">小米官网</a><br>主要分为多个部分<ol>
+<li>头部导航栏:使用是浮动效果，有两个亮点，app下拉二维码，购物车下拉二维码。<ul>
+<li>简单点的购物车下拉  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 购物车 --&gt;</span><br><span class="line">&lt;ul class&#x3D;&quot;shop-cart&quot;&gt;</span><br><span class="line">    &lt;li&gt;&lt;a href&#x3D;&quot;javascript:;&quot;&gt;</span><br><span class="line">            &lt;i class&#x3D;&quot;fas fa-shopping-cart&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">            购物车 （0）</span><br><span class="line">        &lt;&#x2F;a&gt;</span><br><span class="line">        &lt;div class&#x3D;&quot;goods&quot;&gt;</span><br><span class="line">                &lt;!-- 购物车下拉栏 --&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;li&gt;</span><br><span class="line">&lt;&#x2F;ul&gt;</span><br></pre></td></tr></table></figure>
+  购物车下拉标签设置:开启绝对定位，设置隐藏，给其父元素ul标签设置hover，移入显示下拉栏。<br>  由于时间精力有限，下拉栏为空，无其他效果。</li>
+<li>app下拉栏<br>  和购物车一样方法，但多了一个小东西:一个倒三角  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.app::after&#123;</span><br><span class="line">    display: none;</span><br><span class="line">    content: &quot;&quot;;</span><br><span class="line">    </span><br><span class="line">    width: 0;</span><br><span class="line">    height: 0;</span><br><span class="line">    border:6px solid transparent;</span><br><span class="line">    border-top: none;</span><br><span class="line">    border-bottom-color: #fff;</span><br><span class="line"></span><br><span class="line">    position: absolute;</span><br><span class="line">    bottom: 0;</span><br><span class="line">    left: 0;</span><br><span class="line">    margin: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  给父元素（类名.app）绑定after伪类，同样是移入显示和设置定位位置，再加一个层级最好。</li>
+</ul>
+</li>
+<li>中间部分<ul>
+<li>最上边是一个导航条<br>导航条里logo效果:父元素固定高度和宽度，开启overflow:hidden;<br>子元素使用两个a标签，两张背景图片，开启绝对定位,一个left值为0:另一个为负的宽度;通过移入改变left值大小;<br>导航条里全部商品隐藏，其下拉框一直显示，开启绝对定位放置于banner轮播图左方。<br>导航条里搜索框使用了伪类focus:移入边框变色</li>
+<li>banner轮播图<br>设置定时器-修改img标签src地址方法,左右两方向键绑定单击事件（切换图片）;<br>下面一排小点:同样绑定单击事件，并且使用类似二级菜单的方法，<br>给当前展示图片对应的点添加active类名，上一张对应点删除active类名。</li>
+<li>服务和商品广告</li>
+<li>小米秒杀<br>两个亮点:<ol>
+<li>使用定时器轮播图:和上一个轮播图方法不一样，使用的是修改left值给父元素绑定移动方法（定时改变left值）</li>
+<li>使用时间对象和定时器:获取当前时间，然后加两个小时得到最终时间，接着用定时器计算最终时间-当前时间，<br>获得的值经过分别处理得到倒计时、分、秒，最后将其放入特定的区域展示。</li>
+</ol>
+</li>
+<li>悬浮工具栏<br>一个固定定位,同样使用app下拉框。</li>
+</ul>
+</li>
+<li>底部<ul>
+<li>页脚<br>由于时间和精力问题，直接将参照原官网复制粘贴。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a href="">登录页面</a><ul>
+<li>导航条<br>左边是一个固定定位的图片，上边是一个普通的导航条</li>
+<li>登录表单<br>登录部分两个亮点:<ol>
+<li>js使用正则表达式判断账号和密码是否符合规则</li>
+<li>密码部分使用隐藏和查看密码。</li>
+</ol>
+</li>
+<li>注册表单<br>时间和精力原因未完成。</li>
+</ul>
+</li>
+<li><a href="">下载页面</a><ul>
+<li>基本按着原小米下载网页复制粘贴过来。</li>
 </ul>
 </li>
 </ul>
